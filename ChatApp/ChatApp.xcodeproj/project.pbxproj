@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E74F76832996754500C5360F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74F76822996754500C5360F /* Button.swift */; };
 		E754B09929940AB80008EA7B /* LoginViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = E754B09829940AB80008EA7B /* LoginViewController .swift */; };
 		E754B09B29940B710008EA7B /* RegisterViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = E754B09A29940B710008EA7B /* RegisterViewController .swift */; };
 		E7795960299413FF0087D8AC /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = E779595F299413FF0087D8AC /* Views.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E74F76822996754500C5360F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		E754B09829940AB80008EA7B /* LoginViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController .swift"; sourceTree = "<group>"; };
 		E754B09A29940B710008EA7B /* RegisterViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController .swift"; sourceTree = "<group>"; };
 		E779595F299413FF0087D8AC /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				E779595F299413FF0087D8AC /* Views.swift */,
+				E74F76822996754500C5360F /* Button.swift */,
 			);
 			path = "Extenstions ";
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74F76832996754500C5360F /* Button.swift in Sources */,
 				E77A9B502992832B00589FC6 /* ViewController.swift in Sources */,
 				E754B09929940AB80008EA7B /* LoginViewController .swift in Sources */,
 				E7795960299413FF0087D8AC /* Views.swift in Sources */,
