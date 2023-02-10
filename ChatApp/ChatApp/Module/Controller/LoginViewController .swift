@@ -9,6 +9,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     // MARK: - Properties
+    var viewModel = LoginViewModel()
     private let welcomeLabel: UILabel = {
         let label = UILabel()
         label.text = "HEY, WELCOME"
@@ -53,11 +54,13 @@ class LoginViewController: UIViewController {
         let button = UIButton(type: .system)
         button.setTitle("Login", for: .normal)
         button.tintColor = .white
-        button.backgroundColor = .black
+        button.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        button.setTitleColor(UIColor(white: 1, alpha: 0.7), for: .normal)
         button.setHeight(50)
         button.layer.cornerRadius = 5
         button.titleLabel?.font = .boldSystemFont(ofSize: 19)
         button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        button.isEnabled = false
         
         return button
     }()
@@ -105,8 +108,8 @@ class LoginViewController: UIViewController {
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-      
         configureUI()
+        configureForTextField()
     }
     
     //MARK: - Helpers
@@ -141,6 +144,11 @@ class LoginViewController: UIViewController {
         googleButton.centerX(inView: view, topAnchor: contLabel.bottomAnchor, paddingTop: 12)
     }
     
+    private func configureForTextField() {
+        emailTextField.addTarget(self, action: #selector(handleTextChanget(sender:)), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(handleTextChanget(sender:)), for: .editingChanged)
+    }
+    
     @objc private func handleLogin() {
         print("Login")
     }
@@ -155,5 +163,16 @@ class LoginViewController: UIViewController {
     
     @objc private func handleGoogleButton() {
         print("CARAMBA")
+    }
+    
+    @objc private func handleTextChanget(sender: UITextField) {
+        sender == emailTextField ? (viewModel.email = sender.text) : (viewModel.password = sender.text)
+        updateForm()
+    }
+    
+    private func updateForm() {
+        loginButton.isEnabled = viewModel.formIsFaild
+        loginButton.backgroundColor = viewModel.background
+        loginButton.setTitleColor(viewModel.buttonTitleColor, for: .normal)
     }
 }
