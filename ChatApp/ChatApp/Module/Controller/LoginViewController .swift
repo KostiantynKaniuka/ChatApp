@@ -10,57 +10,15 @@ import UIKit
 class LoginViewController: UIViewController {
     // MARK: - Properties
     var viewModel = LoginViewModel()
-    private let welcomeLabel: UILabel = {
-        let label = UILabel()
-        label.text = "HEY, WELCOME"
-        label.font = .boldSystemFont(ofSize: 20)
-        label.textColor = .black
-        
-        return label
-    }()
-    
-    private let profileImage: UIImageView = {
-        let iv = UIImageView()
-        iv.image = #imageLiteral(resourceName: "profile")
-        iv.contentMode = .scaleAspectFit
-        iv.setDimensions(height: 50, width: 50)
-        
-        return iv
-    }()
-    
-    private let emailTextField: UITextField = {
-       let tf = UITextField()
-        tf.textColor = .black
-        tf.setHeight(50)
-        tf.placeholder = "Email"
-        tf.backgroundColor = .lightGray
-        tf.keyboardType = .emailAddress
-        
-        return tf
-    }()
-    
-    private let passwordTextField: UITextField = {
-       let tf = UITextField()
-        tf.textColor = .black
-        tf.setHeight(50)
-        tf.placeholder = "Password"
-        tf.backgroundColor = .lightGray
-        tf.isSecureTextEntry = true
-        
-        return tf
-    }()
+    private let welcomeLabel = CustomLabel(text: "HEY, WELCOME", labelFont: .boldSystemFont(ofSize: 20))
+    private let profileImage = CustomImageView(Image: #imageLiteral(resourceName: "profile"), width: 50, height: 50)
+    private let emailTextField = CustomTextField(placeholder: "Email", keyboardType: .emailAddress)
+    private let passwordTextField = CustomTextField(placeholder: "Password", isSecuredText: true)
     
     private lazy var loginButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Login", for: .normal)
-        button.tintColor = .white
-        button.backgroundColor = UIColor.black.withAlphaComponent(0.5)
-        button.setTitleColor(UIColor(white: 1, alpha: 0.7), for: .normal)
-        button.setHeight(50)
-        button.layer.cornerRadius = 5
-        button.titleLabel?.font = .boldSystemFont(ofSize: 19)
         button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
-        button.isEnabled = false
+        button.blackButton(buttonText: "Login")
         
         return button
     }()
@@ -83,15 +41,7 @@ class LoginViewController: UIViewController {
         return button
     }()
     
-    private let contLabel: UILabel = {
-        let label = UILabel()
-        label.text = "or continue with Google"
-        label.textColor = .lightGray
-        label.font = .systemFont(ofSize: 14)
-        
-        return label
-    }()
-    
+    private let contLabel = CustomLabel(text: "or continue with Google", labelFont: .systemFont(ofSize: 14), color: .lightGray)
     private lazy var googleButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Google", for: .normal)
@@ -158,7 +108,8 @@ class LoginViewController: UIViewController {
     }
     
     @objc private func handleSignUpdButton() {
-        print("GOGALLD")
+        let controller = RegisterViewController()
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     @objc private func handleGoogleButton() {

@@ -1,24 +1,20 @@
 //
-//  LoginViewModel.swift
+//  RegisterViewModel.swift
 //  ChatApp
 //
-//  Created by Kostiantyn Kaniuka on 10.02.2023.
+//  Created by Kostiantyn Kaniuka on 15.02.2023.
 //
 
 import UIKit
 
-protocol AuthLoginModel {
-    var formIsFaild: Bool { get }
-    var background: UIColor { get }
-    var buttonTitleColor: UIColor { get }
-}
-
-struct LoginViewModel: AuthLoginModel {
+struct RegisterViewModel: AuthLoginModel {
     var email: String?
     var password: String?
+    var fullName: String?
+    var userName: String?
     
     var formIsFaild: Bool {
-        return email?.isEmpty == false && password?.isEmpty == false
+        return email?.isEmpty == false && password?.isEmpty == false && fullName?.isEmpty == false && userName?.isEmpty == false
     }
     
     var background: UIColor {
