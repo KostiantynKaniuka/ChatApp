@@ -23,6 +23,7 @@
 		E7C38E2E299CF0E200C6F1D3 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38E2D299CF0E200C6F1D3 /* RegisterViewModel.swift */; };
 		E7C38E30299D19AB00C6F1D3 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38E2F299D19AB00C6F1D3 /* CustomLabel.swift */; };
 		E7C38E32299D1CAA00C6F1D3 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38E31299D1CAA00C6F1D3 /* CustomImageView.swift */; };
+		E7C8D992299D4FFB005CE305 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7C8D991299D4FFA005CE305 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		E7C38E2D299CF0E200C6F1D3 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		E7C38E2F299D19AB00C6F1D3 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		E7C38E31299D1CAA00C6F1D3 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		E7C8D991299D4FFA005CE305 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				E77A9B542992832C00589FC6 /* Assets.xcassets */,
 				E77A9B562992832C00589FC6 /* LaunchScreen.storyboard */,
 				E77A9B592992832C00589FC6 /* Info.plist */,
+				E7C8D991299D4FFA005CE305 /* GoogleService-Info.plist */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -195,7 +198,6 @@
 				68288AD9B81B6CBE4FB79E98 /* Pods-ChatApp.debug.xcconfig */,
 				50F545A6F9F1FFB59F839526 /* Pods-ChatApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -260,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E77A9B582992832C00589FC6 /* LaunchScreen.storyboard in Resources */,
+				E7C8D992299D4FFB005CE305 /* GoogleService-Info.plist in Resources */,
 				E77A9B552992832C00589FC6 /* Assets.xcassets in Resources */,
 				E77A9B532992832B00589FC6 /* Main.storyboard in Resources */,
 			);
@@ -270,6 +273,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		02314961E9E5DEC9783F1F1D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -474,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 882F2W2464;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatApp/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -503,6 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 882F2W2464;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatApp/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
