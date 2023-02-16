@@ -14,6 +14,7 @@ class RegisterViewController: UIViewController {
     private let passwordTextField = CustomTextField(placeholder: "Password", isSecuredText: true)
     private let fullNameTextField = CustomTextField(placeholder: "Fullname")
     private let userNameTextField = CustomTextField(placeholder: "Username")
+    private var profileImage: UIImage?
     
     private lazy var alreadyHaveAccountButton: UIButton = {
         let button = UIButton(type: .system)
@@ -23,7 +24,7 @@ class RegisterViewController: UIViewController {
         
         return button
     }()
-    
+
     private lazy var plusPhotoButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(named: "plus_photo"), for: .normal)
@@ -94,8 +95,17 @@ class RegisterViewController: UIViewController {
     }
     
     @objc private func handleSignup() {
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        guard let userName = userNameTextField.text else { return }
+        guard let fullname = fullNameTextField.text else { return }
+        guard let profileImage = profileImage else { return }
         
+        let creational = AuthCreateUser(email: email, password: password, userName: userName, fullName: fullname, profileName: profileImage)
+        
+        AuthServices.registerUser(creadtional: creational)
     }
+    
     
     private func updateForm() {
         signUpButton.isEnabled = viewModel.formIsFaild
@@ -121,6 +131,7 @@ extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationC
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let selectedImage = info[.editedImage] as? UIImage else { return }
+        self.profileImage = selectedImage
         plusPhotoButton.layer.cornerRadius = plusPhotoButton.frame.width / 2
         plusPhotoButton.layer.masksToBounds = true
         plusPhotoButton.layer.borderColor = UIColor.black.cgColor

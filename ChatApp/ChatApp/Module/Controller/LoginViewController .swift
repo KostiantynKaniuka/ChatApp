@@ -42,6 +42,7 @@ class LoginViewController: UIViewController {
     }()
     
     private let contLabel = CustomLabel(text: "or continue with Google", labelFont: .systemFont(ofSize: 14), color: .lightGray)
+    
     private lazy var googleButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Google", for: .normal)
@@ -65,8 +66,9 @@ class LoginViewController: UIViewController {
     //MARK: - Helpers
     private func configureUI() {
         view.backgroundColor = .white
-        view.addSubview(welcomeLabel)
         view.addSubview(profileImage)
+        view.addSubview(welcomeLabel)
+        
         welcomeLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor)
         welcomeLabel.centerX(inView: view)
         
