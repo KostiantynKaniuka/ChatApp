@@ -7,8 +7,13 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+protocol RegisterViewControllerDalegate: AnyObject {
+    func didSuccessCreateAccount(_ ViewController: RegisterViewController)
+}
+
+final class RegisterViewController: UIViewController {
     // MARK: - Properties
+    weak var delegate: RegisterViewControllerDalegate?
     var viewModel = RegisterViewModel()
     private let emailTextField = CustomTextField(placeholder: "Email", keyboardType: .emailAddress)
     private let passwordTextField = CustomTextField(placeholder: "Password", isSecuredText: true)
@@ -109,6 +114,7 @@ class RegisterViewController: UIViewController {
                 return
             }
         }
+        delegate?.didSuccessCreateAccount(_ViewController: self)
     }
     
     

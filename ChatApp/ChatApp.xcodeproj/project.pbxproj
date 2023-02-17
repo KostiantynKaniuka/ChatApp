@@ -27,6 +27,7 @@
 		E7C38E2E299CF0E200C6F1D3 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38E2D299CF0E200C6F1D3 /* RegisterViewModel.swift */; };
 		E7C38E30299D19AB00C6F1D3 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38E2F299D19AB00C6F1D3 /* CustomLabel.swift */; };
 		E7C38E32299D1CAA00C6F1D3 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38E31299D1CAA00C6F1D3 /* CustomImageView.swift */; };
+		E7C4E26129A018580062A575 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C4E26029A018580062A575 /* ConversationViewController.swift */; };
 		E7C8D992299D4FFB005CE305 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7C8D991299D4FFA005CE305 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		E7C38E2D299CF0E200C6F1D3 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		E7C38E2F299D19AB00C6F1D3 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		E7C38E31299D1CAA00C6F1D3 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		E7C4E26029A018580062A575 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		E7C8D991299D4FFA005CE305 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +185,7 @@
 		E77A9B62299283D200589FC6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E7C4E25F29A018420062A575 /* Chat */,
 				E754B09829940AB80008EA7B /* LoginViewController .swift */,
 				E754B09A29940B710008EA7B /* RegisterViewController .swift */,
 			);
@@ -210,6 +213,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E7C4E25F29A018420062A575 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E7C4E26029A018580062A575 /* ConversationViewController.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		EA4DC03C0A17C7A59DBCB772 /* Pods */ = {
@@ -348,6 +359,7 @@
 				E754B09929940AB80008EA7B /* LoginViewController .swift in Sources */,
 				E7795960299413FF0087D8AC /* Views.swift in Sources */,
 				E7330EF7299E4C3B0084D800 /* FileUploader.swift in Sources */,
+				E7C4E26129A018580062A575 /* ConversationViewController.swift in Sources */,
 				E71E20B2299D52A200FD0879 /* AuthServices.swift in Sources */,
 				E74F76852996B77100C5360F /* LoginViewModel.swift in Sources */,
 				E754B09B29940B710008EA7B /* RegisterViewController .swift in Sources */,

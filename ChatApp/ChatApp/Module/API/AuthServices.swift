@@ -6,12 +6,12 @@
 //
 
 import Foundation
-import FirebaseAuth
+import Firebase
 
 struct AuthServices {
     
-    static func loginUser() {
-        
+    static func loginUser(withEmail email: String, withPassword password: String, completion: @escaping (AuthDataResult?, Error?) -> Void) {
+        Auth.auth().signIn(withEmail: email, password: password, completion: completion)
     }
     
     static func registerUser(creadtional: AuthCreateUser, completion: @escaping(Error?) -> Void) {
