@@ -11,9 +11,15 @@ class LoginViewController: UIViewController {
     // MARK: - Properties
     var viewModel = LoginViewModel()
     private let welcomeLabel = CustomLabel(text: "HEY, WELCOME", labelFont: .boldSystemFont(ofSize: 20))
-    private let profileImage = CustomImageView(Image: #imageLiteral(resourceName: "profile"), width: 50, height: 50)
     private let emailTextField = CustomTextField(placeholder: "Email", keyboardType: .emailAddress)
     private let passwordTextField = CustomTextField(placeholder: "Password", isSecuredText: true)
+    
+    private let profileImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "profile")
+        
+        return imageView
+    }()
     
     private lazy var loginButton: UIButton = {
         let button = UIButton(type: .system)

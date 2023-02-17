@@ -3,13 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict/>
-	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E77A9B472992832B00589FC6</key>
+		<key>ChatApp.xcscheme_^#shared#^_</key>
 		<dict>
-			<key>primary</key>
-			<true/>
+			<key>orderHint</key>
+			<integer>34</integer>
 		</dict>
 	</dict>
 </dict>

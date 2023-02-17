@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseAuth
 
 struct AuthServices {
+    
     static func loginUser() {
         
     }
@@ -20,6 +21,15 @@ struct AuthServices {
                     print("Error create account \(error.localizedDescription)")
                     return
                 }
+                guard let userId = result?.user.uid else { return }
+                let data: [String: Any] = [
+                    "email": creadtional.email,
+                    "username": creadtional.email,
+                    "fullname": creadtional.fullName,
+                    "userId": userId,
+                    "profileImageURL": imageURL
+                ]
+                collectionUser.document(userId).setData(data, completion: completion)
             }
         }
     }
