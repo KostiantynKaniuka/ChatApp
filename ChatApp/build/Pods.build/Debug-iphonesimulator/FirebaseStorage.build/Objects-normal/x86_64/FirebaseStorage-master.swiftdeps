@@ -1,0 +1,32 @@
+version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
+options: "b8f5b2107d62786b00883951e57efff5734349b8e22e891a64243033f43c3452"
+build_start_time: [1676669083, 522759914]
+build_end_time: [1676669084, 671586990]
+inputs:
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/AsyncAwait.swift": [1676472835, 835260391]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/Internal/StorageDeleteTask.swift": [1676472835, 833650112]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/Internal/StorageGetDownloadURLTask.swift"
+  : [1676472835, 834002494]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/Internal/StorageGetMetadataTask.swift"
+  : [1676472835, 834937572]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/Internal/StorageListTask.swift": [1676472835, 835093021]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/Internal/StoragePath.swift": [1676472835, 833832740]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/Internal/StorageTaskState.swift": [1676472835, 834486484]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/Internal/StorageTokenAuthorizer.swift"
+  : [1676472835, 834763526]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/Internal/StorageUpdateMetadataTask.swift"
+  : [1676472835, 834318161]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/Internal/StorageUtils.swift": [1676472835, 834155559]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/Result.swift": [1676472835, 833367347]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/Storage.swift": [1676472835, 832236766]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageComponent.swift": [1676472835, 833033323]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageConstants.swift": [1676472835, 835748672]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageDownloadTask.swift": [1676472835, 832720756]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageError.swift": [1676472835, 836086750]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageListResult.swift": [1676472835, 832873106]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageMetadata.swift": [1676472835, 835568428]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageObservableTask.swift": [1676472835, 832550048]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageReference.swift": [1676472835, 835918426]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageTask.swift": [1676472835, 833215475]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageTaskSnapshot.swift": [1676472835, 832388401]
+  "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageUploadTask.swift": [1676472835, 835409641]

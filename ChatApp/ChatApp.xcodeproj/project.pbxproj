@@ -28,7 +28,8 @@
 		E7C38E30299D19AB00C6F1D3 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38E2F299D19AB00C6F1D3 /* CustomLabel.swift */; };
 		E7C38E32299D1CAA00C6F1D3 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38E31299D1CAA00C6F1D3 /* CustomImageView.swift */; };
 		E7C4E26129A018580062A575 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C4E26029A018580062A575 /* ConversationViewController.swift */; };
-		E7C8D992299D4FFB005CE305 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7C8D991299D4FFA005CE305 /* GoogleService-Info.plist */; };
+		E7C4E26329A025060062A575 /* ViewControllerHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C4E26229A025060062A575 /* ViewControllerHud.swift */; };
+		E7C4E26429A027D90062A575 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7C8D991299D4FFA005CE305 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		E7C38E2F299D19AB00C6F1D3 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		E7C38E31299D1CAA00C6F1D3 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		E7C4E26029A018580062A575 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		E7C4E26229A025060062A575 /* ViewControllerHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHud.swift; sourceTree = "<group>"; };
 		E7C8D991299D4FFA005CE305 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 			children = (
 				E779595F299413FF0087D8AC /* Views.swift */,
 				E74F76822996754500C5360F /* Button.swift */,
+				E7C4E26229A025060062A575 /* ViewControllerHud.swift */,
 			);
 			path = "Extenstions ";
 			sourceTree = "<group>";
@@ -292,8 +295,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C4E26429A027D90062A575 /* GoogleService-Info.plist in Resources */,
 				E77A9B582992832C00589FC6 /* LaunchScreen.storyboard in Resources */,
-				E7C8D992299D4FFB005CE305 /* GoogleService-Info.plist in Resources */,
 				E77A9B552992832C00589FC6 /* Assets.xcassets in Resources */,
 				E77A9B532992832B00589FC6 /* Main.storyboard in Resources */,
 			);
@@ -361,6 +364,7 @@
 				E7330EF7299E4C3B0084D800 /* FileUploader.swift in Sources */,
 				E7C4E26129A018580062A575 /* ConversationViewController.swift in Sources */,
 				E71E20B2299D52A200FD0879 /* AuthServices.swift in Sources */,
+				E7C4E26329A025060062A575 /* ViewControllerHud.swift in Sources */,
 				E74F76852996B77100C5360F /* LoginViewModel.swift in Sources */,
 				E754B09B29940B710008EA7B /* RegisterViewController .swift in Sources */,
 				E77A9B4C2992832B00589FC6 /* AppDelegate.swift in Sources */,

@@ -108,13 +108,15 @@ final class RegisterViewController: UIViewController {
         
         let creational = AuthCreateUser(email: email, password: password, userName: userName, fullName: fullname, profileName: profileImage)
         
+        showLoader(true)
         AuthServices.registerUser(creadtional: creational) { error in
             if let error = error {
-                print("\(error)")
+                self.showMassage(title: "Error", message: error.localizedDescription)
+                self.showLoader(false)
                 return
             }
         }
-        delegate?.didSuccessCreateAccount(_ViewController: self)
+        delegate?.didSuccessCreateAccount(self)
     }
     
     

@@ -1,0 +1,27 @@
+version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
+options: "3768a518bd5cb6ece4ee9a87617640bbec6d6f72a37674002edb7e853fa782b1"
+build_start_time: [1676669082, 446740150]
+build_end_time: [1676669082, 584320068]
+inputs:
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Heartbeat.swift"
+  : !private [1676472810, 415367364]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatController.swift"
+  : !private [1676472810, 415843963]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatStorage.swift"
+  : !private [1676472810, 416178941]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsBundle.swift"
+  : !private [1676472810, 416346549]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsPayload.swift"
+  : !private [1676472810, 416663169]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/RingBuffer.swift"
+  : !private [1676472810, 415525913]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Storage.swift"
+  : !private [1676472810, 415149688]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/StorageFactory.swift"
+  : !private [1676472810, 416810274]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/WeakContainer.swift"
+  : !private [1676472810, 416490793]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatController.swift"
+  : !private [1676472810, 415675163]
+  ? "/Users/konstantinkanuka/Desktop/ChatApp/ChatApp/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatsPayload.swift"
+  : !private [1676472810, 416006088]

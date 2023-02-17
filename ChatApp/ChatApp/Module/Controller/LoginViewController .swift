@@ -111,11 +111,14 @@ class LoginViewController: UIViewController {
         guard let email = emailTextField.text?.lowercased() else { return }
         guard let password = passwordTextField.text?.lowercased() else { return }
         
+        showLoader(true)
         AuthServices.loginUser(withEmail: email, withPassword: password) { result, error in
             if let error = error {
-                print("Error \(error.localizedDescription)")
+                self.showMassage(title: "Error", message: error.localizedDescription)
+                self.showLoader(false)
                 return
             }
+            self.showLoader(false)
             print("success login")
             self.navigateToConversation()
         }
@@ -159,6 +162,7 @@ extension LoginViewController: RegisterViewControllerDalegate {
     
     func didSuccessCreateAccount(_ ViewController: RegisterViewController) {
         ViewController.navigationController?.popViewController(animated: true)
+        showLoader(false)
         navigateToConversation()
     }
     
