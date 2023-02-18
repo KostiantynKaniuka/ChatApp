@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ConversationViewController: UIViewController {
     //MARK: - properties
@@ -22,9 +23,24 @@ class ConversationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "conversation"
-        view.backgroundColor = .white      
+        configureUI()
     }
+    
     //MARK: - methods
+    private func configureUI() {
+        title = user.fullname
+        view.backgroundColor = .white
+        let logoutButton = UIBarButtonItem(title: "Loguot", style: .plain, target: self, action: #selector(handleLoguot))
+        navigationItem.leftBarButtonItem = logoutButton
+    }
     //MARK: - helpers
+    
+    @objc func handleLoguot() {
+        do {
+            try Auth.auth().signOut()
+            dismiss(animated: true)
+        } catch {
+            print("Error sign out")
+        }
+    }
 }
