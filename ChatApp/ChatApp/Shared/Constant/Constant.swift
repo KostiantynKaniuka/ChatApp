@@ -6,6 +6,7 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseFirestore
 
-let collectionUser = Firestore.firestore().collection("users")
+let collectionUser = Firestore.firestore().collection("Users")
+

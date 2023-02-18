@@ -14,7 +14,8 @@ class ConversationViewController: UIViewController {
         super.viewDidLoad()
         title = "conversation"
         view.backgroundColor = .white
-        
+        let nv = navigationController
+        nv?.pushViewController(LoginViewController(), animated: true)
     }
     //MARK: - methods
     //MARK: - helpers
