@@ -12,6 +12,7 @@
 		E71E20B4299D537C00FD0879 /* AuthCreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71E20B3299D537C00FD0879 /* AuthCreateUser.swift */; };
 		E71E20B7299D566D00FD0879 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71E20B6299D566D00FD0879 /* Constant.swift */; };
 		E7237C1729A125F800832B6D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7237C1629A125F800832B6D /* User.swift */; };
+		E7237C1929A1450000832B6D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7237C1829A1450000832B6D /* UserService.swift */; };
 		E7330EF7299E4C3B0084D800 /* FileUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7330EF6299E4C3B0084D800 /* FileUploader.swift */; };
 		E74F76832996754500C5360F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74F76822996754500C5360F /* Button.swift */; };
 		E74F76852996B77100C5360F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74F76842996B77100C5360F /* LoginViewModel.swift */; };
@@ -41,6 +42,7 @@
 		E71E20B3299D537C00FD0879 /* AuthCreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCreateUser.swift; sourceTree = "<group>"; };
 		E71E20B6299D566D00FD0879 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		E7237C1629A125F800832B6D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E7237C1829A1450000832B6D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		E7330EF6299E4C3B0084D800 /* FileUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploader.swift; sourceTree = "<group>"; };
 		E74F76822996754500C5360F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		E74F76842996B77100C5360F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				E71E20B1299D52A200FD0879 /* AuthServices.swift */,
 				E71E20B3299D537C00FD0879 /* AuthCreateUser.swift */,
 				E7330EF6299E4C3B0084D800 /* FileUploader.swift */,
+				E7237C1829A1450000832B6D /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				E74F76852996B77100C5360F /* LoginViewModel.swift in Sources */,
 				E754B09B29940B710008EA7B /* RegisterViewController .swift in Sources */,
 				E77A9B4C2992832B00589FC6 /* AppDelegate.swift in Sources */,
+				E7237C1929A1450000832B6D /* UserService.swift in Sources */,
 				E77A9B4E2992832B00589FC6 /* SceneDelegate.swift in Sources */,
 				E74F76882996CFA700C5360F /* CustomTextField.swift in Sources */,
 				E7237C1729A125F800832B6D /* User.swift in Sources */,

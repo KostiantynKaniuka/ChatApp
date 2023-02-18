@@ -18,7 +18,7 @@ struct User {
         self.email = dictionary["email"] as? String ?? ""
         self.userName = dictionary["username"] as? String ?? ""
         self.fullname = dictionary["fullname"] as? String ?? ""
-        self.userId = dictionary["userid"] as? String ?? ""
-        self.profileImageURL = dictionary["email"] as? String ?? ""
+        self.userId = dictionary["userId"] as? String ?? ""
+        self.profileImageURL = dictionary["profileImageURL"] as? String ?? ""
     }
 }
