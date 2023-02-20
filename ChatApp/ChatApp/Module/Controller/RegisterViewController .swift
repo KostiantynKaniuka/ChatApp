@@ -114,10 +114,9 @@ final class RegisterViewController: UIViewController {
                 self.showLoader(false)
                 return
             }
+            self.delegate?.didSuccessCreateAccount(self)
         }
-        delegate?.didSuccessCreateAccount(self)
     }
-    
     
     private func updateForm() {
         signUpButton.isEnabled = viewModel.formIsFaild

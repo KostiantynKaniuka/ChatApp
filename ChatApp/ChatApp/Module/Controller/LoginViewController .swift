@@ -159,7 +159,6 @@ class LoginViewController: UIViewController {
             navigation.modalPresentationStyle = .fullScreen
             self.present(navigation, animated: true, completion: nil)
         }
- 
     }
 }
 
@@ -171,9 +170,4 @@ extension LoginViewController: RegisterViewControllerDalegate {
         showLoader(false)
         navigateToConversation()
     }
-    
-    
-    
-    
-    
 }
