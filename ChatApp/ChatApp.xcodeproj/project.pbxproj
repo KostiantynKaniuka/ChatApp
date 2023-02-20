@@ -28,6 +28,8 @@
 		E77A9B532992832B00589FC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77A9B512992832B00589FC6 /* Main.storyboard */; };
 		E77A9B552992832C00589FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77A9B542992832C00589FC6 /* Assets.xcassets */; };
 		E77A9B582992832C00589FC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77A9B562992832C00589FC6 /* LaunchScreen.storyboard */; };
+		E7BB541729A3A86F00DC1D54 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB541629A3A86F00DC1D54 /* ConversationCell.swift */; };
+		E7BB541929A40A6A00DC1D54 /* NewChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB541829A40A6A00DC1D54 /* NewChatTableViewCell.swift */; };
 		E7C38E2E299CF0E200C6F1D3 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38E2D299CF0E200C6F1D3 /* RegisterViewModel.swift */; };
 		E7C38E30299D19AB00C6F1D3 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38E2F299D19AB00C6F1D3 /* CustomLabel.swift */; };
 		E7C38E32299D1CAA00C6F1D3 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38E31299D1CAA00C6F1D3 /* CustomImageView.swift */; };
@@ -62,6 +64,8 @@
 		E77A9B542992832C00589FC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E77A9B572992832C00589FC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E77A9B592992832C00589FC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7BB541629A3A86F00DC1D54 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		E7BB541829A40A6A00DC1D54 /* NewChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatTableViewCell.swift; sourceTree = "<group>"; };
 		E7C38E2D299CF0E200C6F1D3 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		E7C38E2F299D19AB00C6F1D3 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		E7C38E31299D1CAA00C6F1D3 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
@@ -217,6 +221,8 @@
 		E77A9B64299283EF00589FC6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7BB541629A3A86F00DC1D54 /* ConversationCell.swift */,
+				E7BB541829A40A6A00DC1D54 /* NewChatTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,7 +388,9 @@
 				E74F76852996B77100C5360F /* LoginViewModel.swift in Sources */,
 				E754B09B29940B710008EA7B /* RegisterViewController .swift in Sources */,
 				E77A9B4C2992832B00589FC6 /* AppDelegate.swift in Sources */,
+				E7BB541929A40A6A00DC1D54 /* NewChatTableViewCell.swift in Sources */,
 				E7237C1929A1450000832B6D /* UserService.swift in Sources */,
+				E7BB541729A3A86F00DC1D54 /* ConversationCell.swift in Sources */,
 				E77A9B4E2992832B00589FC6 /* SceneDelegate.swift in Sources */,
 				E74F76882996CFA700C5360F /* CustomTextField.swift in Sources */,
 				E7237C1729A125F800832B6D /* User.swift in Sources */,
